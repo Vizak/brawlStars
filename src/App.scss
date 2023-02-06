@@ -1,7 +1,128 @@
 .App {
 	text-align: center;
-
-	button {
-		font-weight: bold;
-	}
 }
+
+.powerLabel {
+	position:absolute;
+	top:10px;
+	left: 50px;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+.powerPoints {
+	position:absolute;
+	top:3px;
+	left:30px;
+}
+
+.coins {
+	position:absolute;
+	top:3px;
+	left:160px;
+}
+
+.coinLabel {
+	position:absolute;
+	top:10px;
+	left: 50px;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+.symbol {
+	position:absolute;
+	top: 10px;
+	left: 130px;
+	font-weight: bold;
+	font-size:x-large;
+}
+
+
+.square {
+	position:absolute;
+	top:75px;
+	left:-20	px;
+	height:278px;
+	width:295px;
+	background-color: greenyellow;
+	border:5px solid;
+}
+
+.Box{
+	position:absolute;
+	bottom:0px;
+	height:54px;
+	width:290px;
+	background-color: green;
+	border:5px solid;
+}
+
+.trophy {
+	position:absolute;
+	top:-55px;
+}
+
+.trophyLabel {
+	position:absolute;
+	top:-35px;
+	font-size: x-large;
+	font-weight: bold;
+	left: 205px;
+}
+
+.rankLabel {
+	position:absolute;
+	top:-29px;
+	font-size: x-large;
+	font-weight: bold;
+	left: -10px;
+}
+
+.brawlerName {
+	position:absolute;
+	top:205px;
+	left:5px;
+	font-weight: bold;
+	font-size:x-large
+}
+
+.brawlerPower {
+	position:absolute;
+	left:175px;
+	top:205px;
+	font-weight: bold;
+	font-size:x-large
+}
+
+.powerValue {
+	position:absolute;
+	top: 200px;
+	left: 260px;
+	height: 35px;
+	width: 35px;
+	font-weight: bold;
+	font-size: xx-large;
+	background-color: black;
+	color:white;
+}
+.trophyValue {
+	position:absolute;
+	top: 40px;
+	left: 260px;
+	height: 55px;
+	width: 35px;
+}
+.rank {
+	position:absolute;
+	top:-55px;
+	left:-50px;
+	border-radius: 50%
+}
+
+.button{
+	position:absolute;
+	bottom: -64px;
+}
+
+
