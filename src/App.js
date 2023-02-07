@@ -1,7 +1,9 @@
 import { React, useState } from 'react';
 import './App.scss';
-import Brawler from './components/Brawler';
-import SortFunctions from './services.js/SortFunctions';
+import Container from './components/Container';
+import Button from './components/Button/Button';
+import BrawlersCount from './components/Heading/BrawlersCount';
+import SortFunctions from './services/SortFunctions';
 
 const brawlers = (context) => ({
 	btnIndex: 1,
@@ -15,7 +17,9 @@ const App = (context) => {
 	const extendedContext = { ...context, state, setState };
 
 	return <div className="App">
-		<Brawler { ...extendedContext }/>
+		<BrawlersCount { ...extendedContext }/>
+		<Button { ...extendedContext }/>
+		<Container { ...extendedContext }/>
 	</div>;
 };
 

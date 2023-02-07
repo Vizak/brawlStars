@@ -1,5 +1,5 @@
 import { React } from 'react';
-import SortFunctions from '../services/sortFunctions';
+import SortFunctions from '../../services/SortFunctions';
 
 const types = {
 	LeastTrophies: (context) => SortFunctions.leastTrophies(context),

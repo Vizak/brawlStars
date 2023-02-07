@@ -3,15 +3,15 @@ import { React } from 'react';
 const Trophies = (context) => {
 	const { data: { brawler }} = context;
 
-	return <div>
+	return <div className="trophyRectangle">
 		<img
 			className="trophy"
 			src="/image/Trophy.png"
 			alt="e"
-			height="50px"
-			width="50px"
+			height="20px"
+			width="20px"
 		/>
-		<label className="trophyLabel">{brawler.trophies}</label>
+		<span className="trophyLabel">{brawler.trophies}</span>
 	</div>;
 };
 

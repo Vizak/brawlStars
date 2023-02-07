@@ -1,5 +1,8 @@
+/* eslint-disable no-magic-numbers */
 const config = {
 	size: 2,
+	squareMultiplier: 168,
+	squareMargin: 100,
 	characters: [
 		{
 			name: 'Darryl',
@@ -36,6 +39,45 @@ const config = {
 			trophies: 61,
 			image: '/image/ElPrimo.png',
 		},
+	],
+
+	sortType:
+	[
+		'byRarity',
+		'byRarityDesc',
+		'MostTrophies',
+		'LeastTrophies',
+		'PowerLevel',
+		'closestToNextRank',
+	],
+	Rarity: {
+		common: 1,
+		Rare: 2,
+		SuperRare: 3,
+		Epic: 4,
+		Mythic: 5,
+		Legendary: 6,
+		Chromatic: 7,
+	},
+	rankTrophies: [
+		0,
+		10,
+		20,
+		30,
+		40,
+		60,
+		80,
+		100,
+		120,
+		140,
+		160,
+		180,
+		220,
+		260,
+		300,
+		340,
+		380,
+		420,
 	],
 };
 

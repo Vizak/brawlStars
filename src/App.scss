@@ -1,5 +1,16 @@
 .App {
 	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('https://preview.redd.it/rkk4g2dopwu41.jpg?auto=webp&s=58de2cd6cf478ef19b5af38e2556ba788de045a9');
+	height:100vh;
+	width:100vw;
+}
+
+.title {
+	top: 0;
+	font-weight: bold;
+	font-size: xx-large;
 }
 
 .powerLabel {
@@ -45,30 +56,38 @@
 	left:-20	px;
 	height:278px;
 	width:295px;
-	background-color: greenyellow;
 	border:5px solid;
 }
 
 .Box{
 	position:absolute;
 	bottom:0px;
-	height:54px;
-	width:290px;
+	height:65px;
+	width:300px;
 	background-color: green;
-	border:5px solid;
 }
 
 .trophy {
 	position:absolute;
-	top:-55px;
+	top:0px;
+	left: 70px;
 }
 
 .trophyLabel {
 	position:absolute;
-	top:-35px;
+	top:-4px;
 	font-size: x-large;
 	font-weight: bold;
-	left: 205px;
+	left: 93px;
+}
+
+.trophyRectangle {
+	position:absolute;
+	top: -30px;
+	left:20px;
+	height: 20px;
+	width:176px;
+	border:3px solid black;
 }
 
 .rankLabel {
@@ -89,7 +108,7 @@
 
 .brawlerPower {
 	position:absolute;
-	left:175px;
+	left:182px;
 	top:205px;
 	font-weight: bold;
 	font-size:x-large
@@ -98,7 +117,7 @@
 .powerValue {
 	position:absolute;
 	top: 200px;
-	left: 260px;
+	left: 265px;
 	height: 35px;
 	width: 35px;
 	font-weight: bold;
@@ -106,6 +125,7 @@
 	background-color: black;
 	color:white;
 }
+
 .trophyValue {
 	position:absolute;
 	top: 40px;
@@ -115,14 +135,17 @@
 }
 .rank {
 	position:absolute;
-	top:-55px;
-	left:-50px;
+	top:-36px;
+	left:-27px;
 	border-radius: 50%
 }
 
 .button{
 	position:absolute;
-	bottom: -64px;
+	top: 45px;
+	left: 902px;
+	font-weight: bold;
+	font-size: x-large;
 }
 
 

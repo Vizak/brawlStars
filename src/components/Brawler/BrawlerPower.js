@@ -1,8 +1,8 @@
 import { React } from 'react';
 
 const BrawlerPower = ({ data: { brawler }}) => <div>
-	<label className="brawlerPower">power </label>
-	<label className="powerValue">{brawler.powerLevel}</label>
+	<span className="brawlerPower">power </span>
+	<span className="powerValue">{brawler.powerLevel}</span>
 </div>;
 
 export default BrawlerPower;

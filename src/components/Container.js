@@ -1,14 +1,14 @@
 import { React } from 'react';
-import Square from './Square';
+import Character from './Character';
 
-const Brawler = (context) => {
+const Container = (context) => {
 	const { state: { brawlers }} = context;
 
 	return brawlers.map((brawler, key) =>
-		<Square
+		<Character
 			key={ key }
 			{ ...{ ...context, data: { brawler, key }} }
 		/>);
 };
 
-export default Brawler;
+export default Container;

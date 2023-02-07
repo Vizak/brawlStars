@@ -1,6 +1,6 @@
 import { React } from 'react';
 
-const Coins = (context) => {
+const BrawlerCoins = (context) => {
 	const { data: { brawler }} = context;
 
 	return	<span className="coins">
@@ -15,4 +15,4 @@ const Coins = (context) => {
 	</span>;
 };
 
-export default Coins;
+export default BrawlerCoins;

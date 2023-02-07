@@ -1,11 +1,11 @@
 import { React } from 'react';
-import Coins from './Coins';
+import BrawlerCoins from './BrawlerCoins';
 import PowerPoints from './PowerPoints';
 
 const Wallet = (context) => <div className="Box">
 	<PowerPoints { ...context }/>
-	<label className="symbol">+</label>
-	<Coins { ...context }/>
+	<span className="symbol">+</span>
+	<BrawlerCoins { ...context }/>
 
 </div>;
 

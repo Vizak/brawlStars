@@ -10,6 +10,18 @@ const getCharacters = ({ config: { characters }}) =>
 		coins: rndBetween(1, 400),
 	}));
 
+const squareStyle = (context) => {
+	const { data: { key },
+		config: { size, squareMultiplier, squareMargin }} = context;
+
+	return {
+		top: (Math.floor(key / 3) * 380) + 150,
+		left: ((((key % 3) * squareMultiplier) + squareMargin) * size) + 300,
+		width: 150 * size,
+		height: 150 * size,
+	};
+};
+
 const leastTrophies = ({ state: { brawlers }}) =>
 	brawlers.sort((a, b) => a.trophies - b.trophies);
 
@@ -33,6 +45,7 @@ const closestToNextRank = ({ config: { rankTrophies },
 
 const SortFunctions = {
 	getCharacters,
+	squareStyle,
 	leastTrophies,
 	maxTrophies,
 	powerLevel,
