@@ -1,5 +1,6 @@
 /* eslint-disable no-magic-numbers */
 
+import { peek } from '@laufire/utils/debug';
 import { rndBetween } from '@laufire/utils/lib';
 
 const getCharacters = ({ config: { characters }}) =>
@@ -14,9 +15,11 @@ const squareStyle = (context) => {
 	const { data: { key },
 		config: { size, squareMultiplier, squareMargin }} = context;
 
+	peek(key);
 	return {
 		top: (Math.floor(key / 3) * 380) + 150,
-		left: ((((key % 3) * squareMultiplier) + squareMargin) * size) + 300,
+		left: Math.floor((((key % 3) * squareMultiplier)
+		+ squareMargin) * size) + 300,
 		width: 150 * size,
 		height: 150 * size,
 	};
