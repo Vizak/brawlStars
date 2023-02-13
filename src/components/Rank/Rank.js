@@ -8,7 +8,7 @@ const Rank = (context) => {
 			className="rank"
 			src="/image/Rank.png"
 			alt="e"
-			height="40px"
+			height="50px"
 			width="50px"
 		/>
 		<span className="rankLabel">{brawler.rank}</span>

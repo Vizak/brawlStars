@@ -13,6 +13,12 @@
 	font-size: xx-large;
 }
 
+.upgrade{
+	position: absolute;
+	left: 151px;
+	top: 209px;
+}
+
 .powerLabel {
 	position:absolute;
 	top:10px;
@@ -52,19 +58,26 @@
 
 .square {
 	position:absolute;
-	top:75px;
-	left:-20	px;
-	height:278px;
-	width:295px;
 	border:5px solid;
 }
 
 .Box{
 	position:absolute;
-	bottom:0px;
-	height:65px;
+	bottom:0%;
+	height:55px;
 	width:300px;
 	background-color: green;
+}
+
+.brawlerImage {
+	position:absolute;
+	left: 10%
+}
+
+.bar {
+	position:absolute;
+	background-color: aqua;
+	height: 20px;
 }
 
 .trophy {

@@ -1,8 +1,7 @@
 /* eslint-disable no-magic-numbers */
 const config = {
-	size: 2,
-	squareMultiplier: 168,
-	squareMargin: 100,
+	squareMultiplier: 450,
+	squareMargin: 500,
 	characters: [
 		{
 			name: 'Darryl',
