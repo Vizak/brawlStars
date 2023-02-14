@@ -2,6 +2,14 @@
 
 import { rndBetween } from '@laufire/utils/lib';
 
+const getPowerLevel = (context) => {
+	const { setState } = context;
+
+	return setInterval(() => setState((state) =>
+		({ ...state,
+			upgrade: !state.upgrade })), 1000);
+};
+
 const getCharacters = ({ config: { characters }}) =>
 	characters.map((character) => ({
 		...character,
@@ -9,18 +17,6 @@ const getCharacters = ({ config: { characters }}) =>
 		powerLevel: rndBetween(1, 12),
 		coins: rndBetween(1, 400),
 	}));
-
-const squareStyle = (context) => {
-	const { data: { key },
-		config: { squareMultiplier, squareMargin }} = context;
-
-	return {
-		top: (Math.floor(key / 3) * 420) + 200,
-		left: Math.floor(((key % 3) * squareMultiplier) + squareMargin),
-		height: 290,
-		width: 300,
-	};
-};
 
 const leastTrophies = ({ state: { brawlers }}) =>
 	brawlers.sort((a, b) => a.trophies - b.trophies);
@@ -44,8 +40,8 @@ const closestToNextRank = ({ config: { rankTrophies },
 		- (rankTrophies[b.rank] - b.trophies));
 
 const SortFunctions = {
+	getPowerLevel,
 	getCharacters,
-	squareStyle,
 	leastTrophies,
 	maxTrophies,
 	powerLevel,

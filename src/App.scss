@@ -1,5 +1,7 @@
 .App {
 	text-align: center;
+	display:flex;
+justify-content: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-image: url('https://preview.redd.it/rkk4g2dopwu41.jpg?auto=webp&s=58de2cd6cf478ef19b5af38e2556ba788de045a9');
@@ -8,15 +10,37 @@
 }
 
 .title {
-	top: 0;
+	position:absolute;
+	top: 4px;
+	left: 800px;
 	font-weight: bold;
 	font-size: xx-large;
+}
+
+.button{
+	position:absolute;
+	top: 4px;
+	left: 1070px;
+	font-weight: bold;
+	font-size: x-large;
+	background-color:black;
+	color:azure;
 }
 
 .upgrade{
 	position: absolute;
 	left: 151px;
 	top: 209px;
+}
+
+.moveUp{
+	padding-top: 5px;
+	border-radius: 50%;
+}
+
+.moveDown{
+	padding-bottom:0% ;
+	border-radius: 50%;
 }
 
 .powerLabel {
@@ -55,10 +79,24 @@
 	font-size:x-large;
 }
 
+.container {
+	display:flex;
+	flex-wrap: wrap;
+	height: 80vh;
+	width: 1000px;
+	margin-top:5%;
+	padding-bottom: 25px;
+	align-items: center;
+	justify-content: space-around;
+	border: 9px solid black;
+}
 
 .square {
-	position:absolute;
+	position: relative;
+	height: 300px;
+	width: 300px;
 	border:5px solid;
+	margin-top: 20px;
 }
 
 .Box{
@@ -153,12 +191,6 @@
 	border-radius: 50%
 }
 
-.button{
-	position:absolute;
-	top: 4px;
-	left: 1101px;
-	font-weight: bold;
-	font-size: x-large;
-}
+
 
 

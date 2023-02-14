@@ -5,10 +5,10 @@ const BrawlerCoins = (context) => {
 
 	return	<span className="coins">
 		<img
-			style={ { borderRadius: '50%' } }
-			src="/image/coins.png"
+			style={ { borderRadius: '70%' } }
+			src="/image/brawlCoins.png"
 			alt="e"
-			height="45px"
+			height="40px"
 			width="45px"
 		/>
 		<label className="coinLabel">{brawler.coins}</label>

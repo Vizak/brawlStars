@@ -18,6 +18,13 @@ const config = {
 			image: '/image/Shelly.png',
 		},
 		{
+			name: 'Barley',
+			type: 'Rare',
+			rank: 7,
+			trophies: 94,
+			image: '/image/Barley.png',
+		},
+		{
 			name: 'Jessie',
 			type: 'SuperRare',
 			rank: 2,

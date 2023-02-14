@@ -4,11 +4,12 @@ import Character from './Character';
 const Container = (context) => {
 	const { state: { brawlers }} = context;
 
-	return brawlers.map((brawler, key) =>
-		<Character
-			key={ key }
-			{ ...{ ...context, data: { brawler, key }} }
-		/>);
+	return <div className="container">
+		{brawlers.map((brawler, key) =>
+			<Character
+				key={ key }
+				{ ...{ ...context, data: { brawler, key }} }
+			/>)}</div>;
 };
 
 export default Container;

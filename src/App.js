@@ -9,12 +9,15 @@ const brawlers = (context) => ({
 	btnIndex: 1,
 	sortModes: 'byRarity',
 	brawlers: SortFunctions.getCharacters(context),
+	upgrade: false,
 });
 
 const App = (context) => {
 	const [state, setState] = useState(brawlers(context));
-
 	const extendedContext = { ...context, state, setState };
+	const { once } = context;
+
+	once(() => SortFunctions.getPowerLevel(extendedContext));
 
 	return <div className="App">
 		<BrawlersCount { ...extendedContext }/>
