@@ -20,9 +20,9 @@ const App = (context) => {
 	once(() => SortFunctions.getPowerLevel(extendedContext));
 
 	return <div className="App">
-		<BrawlersCount { ...extendedContext }/>
-		<Button { ...extendedContext }/>
 		<Container { ...extendedContext }/>
+		<Button { ...extendedContext }/>
+		<BrawlersCount { ...extendedContext }/>
 	</div>;
 };
 
